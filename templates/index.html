@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>François Larrabure | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">FL</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1>François Larrabure <span>Quiñones</span></h1>
+                <p class="hero-title">Software Development Student</p>
+                <p class="hero-description">Passionate about technology, web development and creating innovative solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact me</a>
+                    <a href="#about" class="btn btn-secondary">Learn more</a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:franbure0510@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://drive.google.com/file/d/1sedIsl6S0lyn3rEYLB8aDCmOw90yueu5/view" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-code">
+                    <pre><code>&lt;<span class="tag">developer</span>&gt;
+    &lt;<span class="tag">name</span>&gt;François&lt;/<span class="tag">name</span>&gt;
+    &lt;<span class="tag">passion</span>&gt;Software&lt;/<span class="tag">passion</span>&gt;
+    &lt;<span class="tag">status</span>&gt;Learning&lt;/<span class="tag">status</span>&gt;
+&lt;/<span class="tag">developer</span>&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Software Development student at <strong>ISIL</strong> (4th semester) with knowledge in web development (HTML, CSS, JavaScript), Python programming, and SQL Server databases.</p>
+                    <p>Interested in gaining professional experience and contributing to software development projects while continuing to strengthen my technical skills.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <span class="info-label">Career</span>
+                                <span class="info-value">Software Development - ISIL</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Lima, Peru</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <span class="info-label">Level</span>
+                                <span class="info-value">Junior / Intern</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Years studying</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+                <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Technical</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="HTML">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML</h4>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="CSS">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS</h4>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="SQL Server">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL Server</h4>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Git/GitHub">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <h4>Git / GitHub</h4>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="soft-skills">
+                        <span class="soft-skill">Problem Solving</span>
+                        <span class="soft-skill">Responsibility</span>
+                        <span class="soft-skill">Proactivity</span>
+                        <span class="soft-skill">Teamwork</span>
+                        <span class="soft-skill">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Mar 2022 - Jun 2023</div>
+                    <div class="timeline-content">
+                        <h3>Administrative Assistant</h3>
+                        <p>Administrative and customer service functions. Developed communication, organization, and teamwork skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Software Development Student</h3>
+                        <p>ISIL - 4th semester. Studying database design and programming principles, and web design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifi<span>cations</span></h2>
+            <div class="cert-grid">
+                <a href="https://drive.google.com/file/d/1sedIsl6S0lyn3rEYLB8aDCmOw90yueu5/view?usp=drive_link" target="_blank" class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <h3>SQL Server 2022</h3>
+                    <span>Skill Education · 56 hours</span>
+                    <span class="cert-date">Jan - Feb 2025</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1CWkuGItRXr5QMTukdqYLZybd1lpdYAdI/view?usp=drive_link" target="_blank" class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Development</h3>
+                    <p>Training Institute</p>
+                    <span class="cert-date">2025</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1wz0sL_rN40CjHBxWY5qcUnW7uGy-yxmW/view?usp=drive_link" target="_blank" class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Computer Hardware Basics</h3>
+                    <p>Cisco Networking Academy</p>
+                    <span class="cert-date">2025</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1iWXUWYcxD04ODBsXu4ebtj57LIX1l42r/view?usp=drive_link" target="_blank" class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>IT Essentials</h3>
+                    <p>Cisco Networking Academy</p>
+                    <span class="cert-date">2025</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:franbure0510@gmail.com">franbure0510@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <span>907 705 469</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Lima, Peru</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 François Larrabure Quiñones. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
