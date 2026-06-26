@@ -544,9 +544,8 @@ section {
 }
 
 .project-img {
-    width: 400px;
-    min-height: 250px;
-    flex-shrink: 0;
+    flex: 0 0 50%;
+    min-height: 280px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
     display: flex;
     align-items: center;
@@ -917,7 +916,8 @@ section {
 
     .project-img {
         width: 100%;
-        min-height: 180px;
+        min-height: 220px;
+        flex: none;
     }
 
     .contact-content {
