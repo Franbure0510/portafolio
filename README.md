@@ -20,7 +20,7 @@ Portfolio personal desarrollado con **Flask** (Python) + **HTML, CSS, JavaScript
 
 ## 🚀 Live Demo
 
-[https://portafolio.onrender.com](https://portafolio.onrender.com)
+[https://portafolio.onrender.com](https://portafolio-ptzh.onrender.com)
 
 ## 📦 Instalación local
 
