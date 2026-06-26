@@ -535,7 +535,7 @@ section {
     box-shadow: var(--shadow);
     transition: var(--transition);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .project-card:hover {
@@ -544,7 +544,9 @@ section {
 }
 
 .project-img {
-    height: 160px;
+    width: 300px;
+    min-height: 200px;
+    flex-shrink: 0;
     background: linear-gradient(135deg, var(--primary), var(--accent));
     display: flex;
     align-items: center;
@@ -907,6 +909,15 @@ section {
 
     .about-stats {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-img {
+        width: 100%;
+        min-height: 180px;
     }
 
     .contact-content {
