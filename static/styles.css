@@ -544,8 +544,8 @@ section {
 }
 
 .project-img {
-    flex: 0 0 50%;
-    min-height: 280px;
+    flex: 0 0 65%;
+    min-height: 300px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
     display: flex;
     align-items: center;
@@ -916,7 +916,7 @@ section {
 
     .project-img {
         width: 100%;
-        min-height: 220px;
+        min-height: 250px;
         flex: none;
     }
 
